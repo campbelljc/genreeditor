@@ -1,0 +1,416 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EFB75A6C1B8673AA001226FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB75A6B1B8673AA001226FF /* AppDelegate.m */; };
+		EFB75A6E1B8673AA001226FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB75A6D1B8673AA001226FF /* main.m */; };
+		EFB75A701B8673AB001226FF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFB75A6F1B8673AB001226FF /* Images.xcassets */; };
+		EFB75A731B8673AB001226FF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFB75A711B8673AB001226FF /* MainMenu.xib */; };
+		EFB75A7F1B8673AB001226FF /* genrearteditorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB75A7E1B8673AB001226FF /* genrearteditorTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EFB75A791B8673AB001226FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFB75A5D1B8673AA001226FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFB75A641B8673AA001226FF;
+			remoteInfo = genrearteditor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EFB75A651B8673AA001226FF /* genrearteditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = genrearteditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFB75A691B8673AA001226FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFB75A6A1B8673AA001226FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EFB75A6B1B8673AA001226FF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EFB75A6D1B8673AA001226FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EFB75A6F1B8673AB001226FF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EFB75A721B8673AB001226FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		EFB75A781B8673AB001226FF /* genrearteditorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = genrearteditorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFB75A7D1B8673AB001226FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFB75A7E1B8673AB001226FF /* genrearteditorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = genrearteditorTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EFB75A621B8673AA001226FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFB75A751B8673AB001226FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EFB75A5C1B8673AA001226FF = {
+			isa = PBXGroup;
+			children = (
+				EFB75A671B8673AA001226FF /* genrearteditor */,
+				EFB75A7B1B8673AB001226FF /* genrearteditorTests */,
+				EFB75A661B8673AA001226FF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EFB75A661B8673AA001226FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFB75A651B8673AA001226FF /* genrearteditor.app */,
+				EFB75A781B8673AB001226FF /* genrearteditorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFB75A671B8673AA001226FF /* genrearteditor */ = {
+			isa = PBXGroup;
+			children = (
+				EFB75A6A1B8673AA001226FF /* AppDelegate.h */,
+				EFB75A6B1B8673AA001226FF /* AppDelegate.m */,
+				EFB75A6F1B8673AB001226FF /* Images.xcassets */,
+				EFB75A711B8673AB001226FF /* MainMenu.xib */,
+				EFB75A681B8673AA001226FF /* Supporting Files */,
+			);
+			path = genrearteditor;
+			sourceTree = "<group>";
+		};
+		EFB75A681B8673AA001226FF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EFB75A691B8673AA001226FF /* Info.plist */,
+				EFB75A6D1B8673AA001226FF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EFB75A7B1B8673AB001226FF /* genrearteditorTests */ = {
+			isa = PBXGroup;
+			children = (
+				EFB75A7E1B8673AB001226FF /* genrearteditorTests.m */,
+				EFB75A7C1B8673AB001226FF /* Supporting Files */,
+			);
+			path = genrearteditorTests;
+			sourceTree = "<group>";
+		};
+		EFB75A7C1B8673AB001226FF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EFB75A7D1B8673AB001226FF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EFB75A641B8673AA001226FF /* genrearteditor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFB75A821B8673AB001226FF /* Build configuration list for PBXNativeTarget "genrearteditor" */;
+			buildPhases = (
+				EFB75A611B8673AA001226FF /* Sources */,
+				EFB75A621B8673AA001226FF /* Frameworks */,
+				EFB75A631B8673AA001226FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = genrearteditor;
+			productName = genrearteditor;
+			productReference = EFB75A651B8673AA001226FF /* genrearteditor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EFB75A771B8673AB001226FF /* genrearteditorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFB75A851B8673AB001226FF /* Build configuration list for PBXNativeTarget "genrearteditorTests" */;
+			buildPhases = (
+				EFB75A741B8673AB001226FF /* Sources */,
+				EFB75A751B8673AB001226FF /* Frameworks */,
+				EFB75A761B8673AB001226FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFB75A7A1B8673AB001226FF /* PBXTargetDependency */,
+			);
+			name = genrearteditorTests;
+			productName = genrearteditorTests;
+			productReference = EFB75A781B8673AB001226FF /* genrearteditorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EFB75A5D1B8673AA001226FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Jonathan Campbell";
+				TargetAttributes = {
+					EFB75A641B8673AA001226FF = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					EFB75A771B8673AB001226FF = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = EFB75A641B8673AA001226FF;
+					};
+				};
+			};
+			buildConfigurationList = EFB75A601B8673AA001226FF /* Build configuration list for PBXProject "genrearteditor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EFB75A5C1B8673AA001226FF;
+			productRefGroup = EFB75A661B8673AA001226FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EFB75A641B8673AA001226FF /* genrearteditor */,
+				EFB75A771B8673AB001226FF /* genrearteditorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EFB75A631B8673AA001226FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFB75A701B8673AB001226FF /* Images.xcassets in Resources */,
+				EFB75A731B8673AB001226FF /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFB75A761B8673AB001226FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EFB75A611B8673AA001226FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFB75A6E1B8673AA001226FF /* main.m in Sources */,
+				EFB75A6C1B8673AA001226FF /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFB75A741B8673AB001226FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFB75A7F1B8673AB001226FF /* genrearteditorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EFB75A7A1B8673AB001226FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFB75A641B8673AA001226FF /* genrearteditor */;
+			targetProxy = EFB75A791B8673AB001226FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EFB75A711B8673AB001226FF /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFB75A721B8673AB001226FF /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EFB75A801B8673AB001226FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		EFB75A811B8673AB001226FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		EFB75A831B8673AB001226FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = genrearteditor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EFB75A841B8673AB001226FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = genrearteditor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EFB75A861B8673AB001226FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = genrearteditorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/genrearteditor.app/Contents/MacOS/genrearteditor";
+			};
+			name = Debug;
+		};
+		EFB75A871B8673AB001226FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = genrearteditorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/genrearteditor.app/Contents/MacOS/genrearteditor";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EFB75A601B8673AA001226FF /* Build configuration list for PBXProject "genrearteditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFB75A801B8673AB001226FF /* Debug */,
+				EFB75A811B8673AB001226FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFB75A821B8673AB001226FF /* Build configuration list for PBXNativeTarget "genrearteditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFB75A831B8673AB001226FF /* Debug */,
+				EFB75A841B8673AB001226FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EFB75A851B8673AB001226FF /* Build configuration list for PBXNativeTarget "genrearteditorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFB75A861B8673AB001226FF /* Debug */,
+				EFB75A871B8673AB001226FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EFB75A5D1B8673AA001226FF /* Project object */;
+}
