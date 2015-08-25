@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EFB75A6C1B8673AA001226FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB75A6B1B8673AA001226FF /* AppDelegate.m */; };
-		EFB75A6E1B8673AA001226FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB75A6D1B8673AA001226FF /* main.m */; };
-		EFB75A701B8673AB001226FF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFB75A6F1B8673AB001226FF /* Images.xcassets */; };
-		EFB75A731B8673AB001226FF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFB75A711B8673AB001226FF /* MainMenu.xib */; };
-		EFB75A7F1B8673AB001226FF /* genrearteditorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB75A7E1B8673AB001226FF /* genrearteditorTests.m */; };
+		EF7734861B8C17CD0081C338 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF77347B1B8C17CD0081C338 /* AppDelegate.m */; };
+		EF7734871B8C17CD0081C338 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF77347C1B8C17CD0081C338 /* MainMenu.xib */; };
+		EF7734881B8C17CD0081C338 /* Genre.m in Sources */ = {isa = PBXBuildFile; fileRef = EF77347F1B8C17CD0081C338 /* Genre.m */; };
+		EF7734891B8C17CD0081C338 /* genres.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF7734801B8C17CD0081C338 /* genres.plist */; };
+		EF77348A1B8C17CD0081C338 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF7734811B8C17CD0081C338 /* Images.xcassets */; };
+		EF77348B1B8C17CD0081C338 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF7734821B8C17CD0081C338 /* Info.plist */; };
+		EF77348C1B8C17CD0081C338 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7734831B8C17CD0081C338 /* main.m */; };
+		EF77348D1B8C17CD0081C338 /* NSTask+OneLineTasksWithOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7734851B8C17CD0081C338 /* NSTask+OneLineTasksWithOutput.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,16 +28,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EFB75A651B8673AA001226FF /* genrearteditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = genrearteditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EFB75A691B8673AA001226FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EFB75A6A1B8673AA001226FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		EFB75A6B1B8673AA001226FF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EFB75A6D1B8673AA001226FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		EFB75A6F1B8673AB001226FF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		EFB75A721B8673AB001226FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		EFB75A781B8673AB001226FF /* genrearteditorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = genrearteditorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EFB75A7D1B8673AB001226FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EFB75A7E1B8673AB001226FF /* genrearteditorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = genrearteditorTests.m; sourceTree = "<group>"; };
+		EF77347A1B8C17CD0081C338 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EF77347B1B8C17CD0081C338 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EF77347D1B8C17CD0081C338 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		EF77347E1B8C17CD0081C338 /* Genre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Genre.h; sourceTree = "<group>"; };
+		EF77347F1B8C17CD0081C338 /* Genre.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Genre.m; sourceTree = "<group>"; };
+		EF7734801B8C17CD0081C338 /* genres.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = genres.plist; sourceTree = "<group>"; };
+		EF7734811B8C17CD0081C338 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EF7734821B8C17CD0081C338 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF7734831B8C17CD0081C338 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EF7734841B8C17CD0081C338 /* NSTask+OneLineTasksWithOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTask+OneLineTasksWithOutput.h"; sourceTree = "<group>"; };
+		EF7734851B8C17CD0081C338 /* NSTask+OneLineTasksWithOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTask+OneLineTasksWithOutput.m"; sourceTree = "<group>"; };
+		EFB75A651B8673AA001226FF /* genreeditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = genreeditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFB75A781B8673AB001226FF /* genreeditorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = genreeditorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +61,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF7734791B8C17CD0081C338 /* genreeditor */ = {
+			isa = PBXGroup;
+			children = (
+				EF77347A1B8C17CD0081C338 /* AppDelegate.h */,
+				EF77347B1B8C17CD0081C338 /* AppDelegate.m */,
+				EF77347C1B8C17CD0081C338 /* MainMenu.xib */,
+				EF77347E1B8C17CD0081C338 /* Genre.h */,
+				EF77347F1B8C17CD0081C338 /* Genre.m */,
+				EF7734801B8C17CD0081C338 /* genres.plist */,
+				EF7734811B8C17CD0081C338 /* Images.xcassets */,
+				EF7734821B8C17CD0081C338 /* Info.plist */,
+				EF7734831B8C17CD0081C338 /* main.m */,
+				EF7734841B8C17CD0081C338 /* NSTask+OneLineTasksWithOutput.h */,
+				EF7734851B8C17CD0081C338 /* NSTask+OneLineTasksWithOutput.m */,
+			);
+			path = genreeditor;
+			sourceTree = "<group>";
+		};
 		EFB75A5C1B8673AA001226FF = {
 			isa = PBXGroup;
 			children = (
-				EFB75A671B8673AA001226FF /* genrearteditor */,
-				EFB75A7B1B8673AB001226FF /* genrearteditorTests */,
+				EF7734791B8C17CD0081C338 /* genreeditor */,
 				EFB75A661B8673AA001226FF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -67,56 +90,18 @@
 		EFB75A661B8673AA001226FF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EFB75A651B8673AA001226FF /* genrearteditor.app */,
-				EFB75A781B8673AB001226FF /* genrearteditorTests.xctest */,
+				EFB75A651B8673AA001226FF /* genreeditor.app */,
+				EFB75A781B8673AB001226FF /* genreeditorTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		EFB75A671B8673AA001226FF /* genrearteditor */ = {
-			isa = PBXGroup;
-			children = (
-				EFB75A6A1B8673AA001226FF /* AppDelegate.h */,
-				EFB75A6B1B8673AA001226FF /* AppDelegate.m */,
-				EFB75A6F1B8673AB001226FF /* Images.xcassets */,
-				EFB75A711B8673AB001226FF /* MainMenu.xib */,
-				EFB75A681B8673AA001226FF /* Supporting Files */,
-			);
-			path = genrearteditor;
-			sourceTree = "<group>";
-		};
-		EFB75A681B8673AA001226FF /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				EFB75A691B8673AA001226FF /* Info.plist */,
-				EFB75A6D1B8673AA001226FF /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		EFB75A7B1B8673AB001226FF /* genrearteditorTests */ = {
-			isa = PBXGroup;
-			children = (
-				EFB75A7E1B8673AB001226FF /* genrearteditorTests.m */,
-				EFB75A7C1B8673AB001226FF /* Supporting Files */,
-			);
-			path = genrearteditorTests;
-			sourceTree = "<group>";
-		};
-		EFB75A7C1B8673AB001226FF /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				EFB75A7D1B8673AB001226FF /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EFB75A641B8673AA001226FF /* genrearteditor */ = {
+		EFB75A641B8673AA001226FF /* genreeditor */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EFB75A821B8673AB001226FF /* Build configuration list for PBXNativeTarget "genrearteditor" */;
+			buildConfigurationList = EFB75A821B8673AB001226FF /* Build configuration list for PBXNativeTarget "genreeditor" */;
 			buildPhases = (
 				EFB75A611B8673AA001226FF /* Sources */,
 				EFB75A621B8673AA001226FF /* Frameworks */,
@@ -126,14 +111,14 @@
 			);
 			dependencies = (
 			);
-			name = genrearteditor;
+			name = genreeditor;
 			productName = genrearteditor;
-			productReference = EFB75A651B8673AA001226FF /* genrearteditor.app */;
+			productReference = EFB75A651B8673AA001226FF /* genreeditor.app */;
 			productType = "com.apple.product-type.application";
 		};
-		EFB75A771B8673AB001226FF /* genrearteditorTests */ = {
+		EFB75A771B8673AB001226FF /* genreeditorTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EFB75A851B8673AB001226FF /* Build configuration list for PBXNativeTarget "genrearteditorTests" */;
+			buildConfigurationList = EFB75A851B8673AB001226FF /* Build configuration list for PBXNativeTarget "genreeditorTests" */;
 			buildPhases = (
 				EFB75A741B8673AB001226FF /* Sources */,
 				EFB75A751B8673AB001226FF /* Frameworks */,
@@ -144,9 +129,9 @@
 			dependencies = (
 				EFB75A7A1B8673AB001226FF /* PBXTargetDependency */,
 			);
-			name = genrearteditorTests;
+			name = genreeditorTests;
 			productName = genrearteditorTests;
-			productReference = EFB75A781B8673AB001226FF /* genrearteditorTests.xctest */;
+			productReference = EFB75A781B8673AB001226FF /* genreeditorTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -167,7 +152,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EFB75A601B8673AA001226FF /* Build configuration list for PBXProject "genrearteditor" */;
+			buildConfigurationList = EFB75A601B8673AA001226FF /* Build configuration list for PBXProject "genreeditor" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -180,8 +165,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EFB75A641B8673AA001226FF /* genrearteditor */,
-				EFB75A771B8673AB001226FF /* genrearteditorTests */,
+				EFB75A641B8673AA001226FF /* genreeditor */,
+				EFB75A771B8673AB001226FF /* genreeditorTests */,
 			);
 		};
 /* End PBXProject section */
@@ -191,8 +176,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFB75A701B8673AB001226FF /* Images.xcassets in Resources */,
-				EFB75A731B8673AB001226FF /* MainMenu.xib in Resources */,
+				EF77348A1B8C17CD0081C338 /* Images.xcassets in Resources */,
+				EF7734891B8C17CD0081C338 /* genres.plist in Resources */,
+				EF7734871B8C17CD0081C338 /* MainMenu.xib in Resources */,
+				EF77348B1B8C17CD0081C338 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,8 +197,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFB75A6E1B8673AA001226FF /* main.m in Sources */,
-				EFB75A6C1B8673AA001226FF /* AppDelegate.m in Sources */,
+				EF7734881B8C17CD0081C338 /* Genre.m in Sources */,
+				EF77348C1B8C17CD0081C338 /* main.m in Sources */,
+				EF77348D1B8C17CD0081C338 /* NSTask+OneLineTasksWithOutput.m in Sources */,
+				EF7734861B8C17CD0081C338 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,7 +208,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFB75A7F1B8673AB001226FF /* genrearteditorTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,16 +216,16 @@
 /* Begin PBXTargetDependency section */
 		EFB75A7A1B8673AB001226FF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EFB75A641B8673AA001226FF /* genrearteditor */;
+			target = EFB75A641B8673AA001226FF /* genreeditor */;
 			targetProxy = EFB75A791B8673AB001226FF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EFB75A711B8673AB001226FF /* MainMenu.xib */ = {
+		EF77347C1B8C17CD0081C338 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				EFB75A721B8673AB001226FF /* Base */,
+				EF77347D1B8C17CD0081C338 /* Base */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -329,9 +317,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = genrearteditor/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/genreeditor/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = genreeditor;
 			};
 			name = Debug;
 		};
@@ -340,9 +328,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = genrearteditor/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/genreeditor/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = genreeditor;
 			};
 			name = Release;
 		};
@@ -361,7 +349,7 @@
 				);
 				INFOPLIST_FILE = genrearteditorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = genreeditorTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/genrearteditor.app/Contents/MacOS/genrearteditor";
 			};
 			name = Debug;
@@ -377,7 +365,7 @@
 				);
 				INFOPLIST_FILE = genrearteditorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = genreeditorTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/genrearteditor.app/Contents/MacOS/genrearteditor";
 			};
 			name = Release;
@@ -385,7 +373,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EFB75A601B8673AA001226FF /* Build configuration list for PBXProject "genrearteditor" */ = {
+		EFB75A601B8673AA001226FF /* Build configuration list for PBXProject "genreeditor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EFB75A801B8673AB001226FF /* Debug */,
@@ -394,21 +382,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EFB75A821B8673AB001226FF /* Build configuration list for PBXNativeTarget "genrearteditor" */ = {
+		EFB75A821B8673AB001226FF /* Build configuration list for PBXNativeTarget "genreeditor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EFB75A831B8673AB001226FF /* Debug */,
 				EFB75A841B8673AB001226FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		EFB75A851B8673AB001226FF /* Build configuration list for PBXNativeTarget "genrearteditorTests" */ = {
+		EFB75A851B8673AB001226FF /* Build configuration list for PBXNativeTarget "genreeditorTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EFB75A861B8673AB001226FF /* Debug */,
 				EFB75A871B8673AB001226FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
