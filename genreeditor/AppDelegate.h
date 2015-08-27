@@ -21,6 +21,7 @@
 @property NSInteger showMovies;
 @property NSInteger showTVShows;
 
+- (void)setup;
 - (void)loadGenresPlist;
 - (IBAction) addGenre;
 - (IBAction) restoreDefaultGenres;

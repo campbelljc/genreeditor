@@ -38,16 +38,33 @@ NSString *const genresPlist =@"/Applications/iTunes.app/Contents/Resources/genre
     if ([self checkForCompatibility:[defaults boolForKey:@"launched"]]) {
         // no problem
         [defaults setBool:YES forKey:@"launched"];
+        [self setup];
     }
     else {
-        NSLog(@"error!");
+        NSAlert *alert = [[NSAlert alloc] init];
+        [alert addButtonWithTitle:@"Continue"];
+        [alert addButtonWithTitle:@"Quit"];
+        [alert setMessageText:@"Proceed With Caution"];
+        [alert setInformativeText:@"This program was not tested with your current iTunes version. Continuing to use this application is not recommended. Damage to iTunes and/or incorrect functionality of this program may occur."];
+        [alert setAlertStyle:NSWarningAlertStyle];
+        [alert beginSheetModalForWindow:[self window] completionHandler:^(NSModalResponse resp) {
+            if (resp == 1000) {
+                [self setup];
+            }
+            else if (resp == 1001) {
+                [NSApp performSelector:@selector(terminate:) withObject:nil afterDelay:0.0];
+            }
+        }];
     }
-    
+}
+
+- (void) setup {
     [self loadGenresPlist];
     
     [[[NSApplication sharedApplication] mainWindow] makeFirstResponder:self.tableView];
     [self.tableView scrollRowToVisible:0];
     [self.arrayController setSelectedObjects:[NSArray arrayWithObjects:[self.genres objectAtIndex:0], nil]];
+
 }
 
 - (void)loadGenresPlist {
@@ -312,7 +329,7 @@ NSString *const genresPlist =@"/Applications/iTunes.app/Contents/Resources/genre
     
     NSString* compatibleVersion = @"12.2.2";
     NSString* curVersion = [plist objectForKey:@"CFBundleShortVersionString"];
-        
+    
     return [compatibleVersion isEqualToString:curVersion];
 }
 
