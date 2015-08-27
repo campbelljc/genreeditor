@@ -9,7 +9,7 @@
 #import <Cocoa/Cocoa.h>
 #import <SecurityFoundation/SFAuthorization.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate> { //, NSTableViewDataSource, NSTableViewDelegate> {
+@interface AppDelegate : NSObject <NSApplicationDelegate> {
     SFAuthorization *authorization;
 }
 
@@ -22,12 +22,13 @@
 @property NSInteger showTVShows;
 
 - (void)loadGenresPlist;
-- (void)addGenre:(id)key;
+- (IBAction) addGenre;
 - (IBAction) restoreDefaultGenres;
 - (IBAction) save;
 - (IBAction) delete:(id)sender;
 - (IBAction) toggleGenre;
 - (IBAction) changeImage;
+- (IBAction) visitSite:(id)sender;
 
 - (void)observeValueForKeyPath:(NSString *)keyPath
                       ofObject:(id)object
@@ -35,6 +36,9 @@
                        context:(void *)context;
 
 - (void)protectedCopyFrom:(NSString*)source to:(NSString*)dest;
+
+- (BOOL)checkForCompatibility:(BOOL)launched;
+- (NSString*)md5Of:(NSString*)path;
 
 @end
 

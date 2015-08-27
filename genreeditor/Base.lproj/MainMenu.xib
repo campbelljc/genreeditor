@@ -236,8 +236,17 @@ CA
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="Help" systemMenu="help" id="eUu-iE-9lA">
                         <items>
-                            <menuItem title="Item" id="FwX-40-IZ8">
+                            <menuItem title="Visit website" id="FwX-40-IZ8">
                                 <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="visitSite:" target="Voe-Tx-rLC" id="dvf-m0-CIq"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Get genre art" id="eXZ-BZ-8wJ">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="visitSite:" target="Voe-Tx-rLC" id="4cG-0K-fSb"/>
+                                </connections>
                             </menuItem>
                         </items>
                     </menu>
@@ -384,7 +393,11 @@ CA
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="addGenre:" target="Voe-Tx-rLC" id="XY4-UX-uf4"/>
+                            <binding destination="Voe-Tx-rLC" name="target" keyPath="self" id="KLQ-Ie-fx2">
+                                <dictionary key="options">
+                                    <string key="NSSelectorName">addGenre</string>
+                                </dictionary>
+                            </binding>
                         </connections>
                     </button>
                     <searchField wantsLayer="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZaA-Va-nZr">
@@ -411,7 +424,6 @@ CA
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="addGenre:" target="Voe-Tx-rLC" id="87h-23-YCO"/>
                             <binding destination="Voe-Tx-rLC" name="target" keyPath="self" id="7HG-Ch-Xuj">
                                 <dictionary key="options">
                                     <string key="NSSelectorName">changeImage</string>
@@ -423,19 +435,6 @@ CA
             </view>
             <point key="canvasLocation" x="287.5" y="328"/>
         </window>
-        <menu id="lhX-az-dJU">
-            <items>
-                <menuItem title="Item 1" id="rYa-QM-rDT">
-                    <modifierMask key="keyEquivalentModifierMask"/>
-                </menuItem>
-                <menuItem title="Item 2" id="fXw-kp-bvA">
-                    <modifierMask key="keyEquivalentModifierMask"/>
-                </menuItem>
-                <menuItem title="Item 3" id="Yld-kj-Ofh">
-                    <modifierMask key="keyEquivalentModifierMask"/>
-                </menuItem>
-            </items>
-        </menu>
     </objects>
     <resources>
         <image name="NSAddTemplate" width="11" height="11"/>

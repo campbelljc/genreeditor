@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "Genre.h"
 #import "NSTask+OneLineTasksWithOutput.h"
+#import <CommonCrypto/CommonDigest.h>
 
 NSString *const iTunesDir = @"/Applications/iTunes.app/Contents/Resources/";
 NSString *const genresPlist =@"/Applications/iTunes.app/Contents/Resources/genres.plist";
@@ -32,6 +33,15 @@ NSString *const genresPlist =@"/Applications/iTunes.app/Contents/Resources/genre
         [edit removeItemAtIndex: [edit numberOfItems] - 1];
     
     self.showMusic = self.showPodcasts = self.showMovies = self.showTVShows = 1;
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if ([self checkForCompatibility:[defaults boolForKey:@"launched"]]) {
+        // no problem
+        [defaults setBool:YES forKey:@"launched"];
+    }
+    else {
+        NSLog(@"error!");
+    }
     
     [self loadGenresPlist];
     
@@ -98,7 +108,7 @@ NSString *const genresPlist =@"/Applications/iTunes.app/Contents/Resources/genre
     }
 }
 
-- (IBAction) addGenre:(id)data {
+- (IBAction) addGenre {
     Genre *genre = [[Genre alloc] init];
     
     NSOpenPanel* panel = [NSOpenPanel openPanel];
@@ -134,8 +144,6 @@ NSString *const genresPlist =@"/Applications/iTunes.app/Contents/Resources/genre
             [self save];
         }
     }];
-    
-//    [self.arrayController addObject:[[Genre alloc] initWithData:data]];
 }
 
 - (IBAction) restoreDefaultGenres {
@@ -224,6 +232,15 @@ NSString *const genresPlist =@"/Applications/iTunes.app/Contents/Resources/genre
     }
 }
 
+- (IBAction) visitSite:(id)sender {
+    if ([[sender title] isEqualToString:@"Visit website"]) {
+        [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://www.campbelljc.com/projects/genreeditor"]];
+    }
+    else if ([[sender title] isEqualToString:@"Get genre art"]) {
+        [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"https://www.flickr.com/groups/itunesgenres/pool/"]];
+    }
+}
+
 - (void)protectedCopyFrom:(NSString*)source to:(NSString*)dest {
     NSError *error;
     
@@ -264,12 +281,69 @@ NSString *const genresPlist =@"/Applications/iTunes.app/Contents/Resources/genre
     }
 }
 
+- (BOOL)checkForCompatibility:(BOOL)launched {
+    if (!launched) {
+        // first run, so check if genres.plist have same md5.
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"genres" ofType:@"plist"];
+        
+        NSString *curMD5 = [self md5Of:path];
+        NSString *newMD5 = [self md5Of:genresPlist];
+        
+        if ([curMD5 isEqualToString:@""] || ![curMD5 isEqualToString:newMD5])
+        { // not compatible
+            return NO;
+        }
+    }
+    
+    // check itunes version
+    
+    NSData *plistData = [NSData dataWithContentsOfFile:@"/Applications/iTunes.app/Contents/version.plist"];
+    NSError *error;
+    NSPropertyListFormat format;
+    NSDictionary *plist;
+    
+    plist = [NSPropertyListSerialization propertyListWithData:plistData options:NSPropertyListImmutable format:&format error:&error];
+    
+    if (!plist) {
+        NSLog(error);
+        NSLog(@"Couldn't load version plist file.");
+        return NO;
+    }
+    
+    NSString* compatibleVersion = @"12.2.2";
+    NSString* curVersion = [plist objectForKey:@"CFBundleShortVersionString"];
+        
+    return [compatibleVersion isEqualToString:curVersion];
+}
+
+- (NSString*)md5Of:(NSString*)path {
+    // src : http://iosdevelopertips.com/core-services/create-md5-hash-from-nsstring-nsdata-or-file.html
+    
+    NSData *nsData = [NSData dataWithContentsOfFile:path];
+    
+    if (nsData)
+    {
+        unsigned char md5Buffer[CC_MD5_DIGEST_LENGTH];
+        
+        // Create 16 byte MD5 hash value, store in buffer
+        CC_MD5(nsData.bytes, nsData.length, md5Buffer);
+        
+        // Convert unsigned char buffer to NSString of hex values
+        NSMutableString *output = [NSMutableString stringWithCapacity:CC_MD5_DIGEST_LENGTH * 2];
+        for(int i = 0; i < CC_MD5_DIGEST_LENGTH; i++)
+            [output appendFormat:@"%02x",md5Buffer[i]];
+        
+        return output;
+    }
+    return @"";
+}
+
 -(BOOL) applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)app {
     return YES;
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
-
+//    [self save];
 }
 
 @end
