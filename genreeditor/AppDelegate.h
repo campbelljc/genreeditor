@@ -22,6 +22,7 @@
 @property NSInteger showTVShows;
 
 - (void)setup;
+- (IBAction) showLicense:(id)sender;
 - (void)loadGenresPlist;
 - (IBAction) addGenre;
 - (IBAction) restoreDefaultGenres;

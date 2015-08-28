@@ -35,9 +35,19 @@ NSString *const genresPlist =@"/Applications/iTunes.app/Contents/Resources/genre
     self.showMusic = self.showPodcasts = self.showMovies = self.showTVShows = 1;
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    if ([self checkForCompatibility:[defaults boolForKey:@"launched"]]) {
+    [defaults synchronize];
+    bool launchedAlready = [defaults boolForKey:@"launched"];
+    NSLog([NSString stringWithFormat:@"%d", launchedAlready]);
+    if (!launchedAlready) {
+        // show license agreement.
+        NSLog(@"Showlicense");
+        [self showLicense:nil];
+    }
+    if ([self checkForCompatibility:launchedAlready]) {
         // no problem
+        NSLog(@"checked");
         [defaults setBool:YES forKey:@"launched"];
+        [defaults synchronize];
         [self setup];
     }
     else {
@@ -65,6 +75,23 @@ NSString *const genresPlist =@"/Applications/iTunes.app/Contents/Resources/genre
     [self.tableView scrollRowToVisible:0];
     [self.arrayController setSelectedObjects:[NSArray arrayWithObjects:[self.genres objectAtIndex:0], nil]];
 
+}
+
+- (IBAction) showLicense:(id)sender {
+    NSAlert *alert = [[NSAlert alloc] init];
+    [alert addButtonWithTitle:@"Agree"];
+    [alert addButtonWithTitle:@"Disagree"];
+    [alert setMessageText:@"License"];
+    [alert setInformativeText:@"By installing, copying, or otherwise using the SOFTWARE PRODUCT, you agree to be bounded by the following terms. If you do not agree to said terms, do not use the SOFTWARE PRODUCT. The Author of this Software expressly disclaims any warranty for the SOFTWARE PRODUCT. The SOFTWARE PRODUCT is provided “as is” without warranty of any kind, either express or implied, including, without limitation, the implied warranties or merchantability, fitness for a particular purpose, or noninfringement. The entire risk arising out of use or performance of the SOFTWARE PRODUCT remains with you. In no event shall the author of this Software be liable for any special, consequential, incidental or indirect damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or any other pecuniary loss) arising out of the use of or inability to use this product, even if the Author of this Software is aware of the possibility of such damages and known defects."];
+    [alert setAlertStyle:NSInformationalAlertStyle];
+    [alert beginSheetModalForWindow:[self window] completionHandler:^(NSModalResponse resp) {
+        if (resp == 1000) {
+            return;
+        }
+        else if (resp == 1001) {
+            [NSApp performSelector:@selector(terminate:) withObject:nil afterDelay:0.0];
+        }
+    }];
 }
 
 - (void)loadGenresPlist {

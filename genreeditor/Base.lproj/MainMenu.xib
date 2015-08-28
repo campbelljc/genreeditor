@@ -248,6 +248,13 @@ CA
                                     <action selector="visitSite:" target="Voe-Tx-rLC" id="4cG-0K-fSb"/>
                                 </connections>
                             </menuItem>
+                            <menuItem isSeparatorItem="YES" id="Aq5-H9-EkK"/>
+                            <menuItem title="Show license" id="YvC-gb-fNk">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="showLicense:" target="Voe-Tx-rLC" id="wmJ-KM-HDy"/>
+                                </connections>
+                            </menuItem>
                         </items>
                     </menu>
                 </menuItem>
