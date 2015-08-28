@@ -12,7 +12,7 @@
 #import <CommonCrypto/CommonDigest.h>
 
 NSString *const iTunesDir = @"/Applications/iTunes.app/Contents/Resources/";
-NSString *const genresPlist =@"/Applications/iTunes.app/Contents/Resources/genres.plist";
+NSString *const genresPlist = @"/Applications/iTunes.app/Contents/Resources/genres.plist";
 
 @interface AppDelegate ()
 
@@ -40,12 +40,10 @@ NSString *const genresPlist =@"/Applications/iTunes.app/Contents/Resources/genre
     NSLog([NSString stringWithFormat:@"%d", launchedAlready]);
     if (!launchedAlready) {
         // show license agreement.
-        NSLog(@"Showlicense");
         [self showLicense:nil];
     }
     if ([self checkForCompatibility:launchedAlready]) {
         // no problem
-        NSLog(@"checked");
         [defaults setBool:YES forKey:@"launched"];
         [defaults synchronize];
         [self setup];

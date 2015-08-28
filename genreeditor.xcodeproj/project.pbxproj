@@ -17,16 +17,6 @@
 		EF77348D1B8C17CD0081C338 /* NSTask+OneLineTasksWithOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7734851B8C17CD0081C338 /* NSTask+OneLineTasksWithOutput.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		EFB75A791B8673AB001226FF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EFB75A5D1B8673AA001226FF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EFB75A641B8673AA001226FF;
-			remoteInfo = genrearteditor;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		EF77347A1B8C17CD0081C338 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EF77347B1B8C17CD0081C338 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -40,18 +30,10 @@
 		EF7734841B8C17CD0081C338 /* NSTask+OneLineTasksWithOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTask+OneLineTasksWithOutput.h"; sourceTree = "<group>"; };
 		EF7734851B8C17CD0081C338 /* NSTask+OneLineTasksWithOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTask+OneLineTasksWithOutput.m"; sourceTree = "<group>"; };
 		EFB75A651B8673AA001226FF /* genreeditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = genreeditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EFB75A781B8673AB001226FF /* genreeditorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = genreeditorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		EFB75A621B8673AA001226FF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EFB75A751B8673AB001226FF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -91,7 +73,6 @@
 			isa = PBXGroup;
 			children = (
 				EFB75A651B8673AA001226FF /* genreeditor.app */,
-				EFB75A781B8673AB001226FF /* genreeditorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,24 +97,6 @@
 			productReference = EFB75A651B8673AA001226FF /* genreeditor.app */;
 			productType = "com.apple.product-type.application";
 		};
-		EFB75A771B8673AB001226FF /* genreeditorTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EFB75A851B8673AB001226FF /* Build configuration list for PBXNativeTarget "genreeditorTests" */;
-			buildPhases = (
-				EFB75A741B8673AB001226FF /* Sources */,
-				EFB75A751B8673AB001226FF /* Frameworks */,
-				EFB75A761B8673AB001226FF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EFB75A7A1B8673AB001226FF /* PBXTargetDependency */,
-			);
-			name = genreeditorTests;
-			productName = genrearteditorTests;
-			productReference = EFB75A781B8673AB001226FF /* genreeditorTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -145,10 +108,6 @@
 				TargetAttributes = {
 					EFB75A641B8673AA001226FF = {
 						CreatedOnToolsVersion = 6.3.1;
-					};
-					EFB75A771B8673AB001226FF = {
-						CreatedOnToolsVersion = 6.3.1;
-						TestTargetID = EFB75A641B8673AA001226FF;
 					};
 				};
 			};
@@ -166,7 +125,6 @@
 			projectRoot = "";
 			targets = (
 				EFB75A641B8673AA001226FF /* genreeditor */,
-				EFB75A771B8673AB001226FF /* genreeditorTests */,
 			);
 		};
 /* End PBXProject section */
@@ -180,13 +138,6 @@
 				EF7734891B8C17CD0081C338 /* genres.plist in Resources */,
 				EF7734871B8C17CD0081C338 /* MainMenu.xib in Resources */,
 				EF77348B1B8C17CD0081C338 /* Info.plist in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EFB75A761B8673AB001226FF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,22 +155,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EFB75A741B8673AB001226FF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		EFB75A7A1B8673AB001226FF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EFB75A641B8673AA001226FF /* genreeditor */;
-			targetProxy = EFB75A791B8673AB001226FF /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		EF77347C1B8C17CD0081C338 /* MainMenu.xib */ = {
@@ -271,7 +207,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -308,6 +244,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -334,42 +271,6 @@
 			};
 			name = Release;
 		};
-		EFB75A861B8673AB001226FF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = genrearteditorTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = genreeditorTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/genrearteditor.app/Contents/MacOS/genrearteditor";
-			};
-			name = Debug;
-		};
-		EFB75A871B8673AB001226FF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = genrearteditorTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = genreeditorTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/genrearteditor.app/Contents/MacOS/genrearteditor";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -387,15 +288,6 @@
 			buildConfigurations = (
 				EFB75A831B8673AB001226FF /* Debug */,
 				EFB75A841B8673AB001226FF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EFB75A851B8673AB001226FF /* Build configuration list for PBXNativeTarget "genreeditorTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EFB75A861B8673AB001226FF /* Debug */,
-				EFB75A871B8673AB001226FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
