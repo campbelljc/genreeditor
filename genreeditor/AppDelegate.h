@@ -13,7 +13,7 @@
     SFAuthorization *authorization;
 }
 
-@property IBOutlet NSMutableArray *genres;
+@property NSMutableArray *genres;
 @property (strong) IBOutlet NSArrayController *arrayController;
 @property IBOutlet NSTableView *tableView;
 @property NSInteger showMusic;

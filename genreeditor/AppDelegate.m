@@ -17,7 +17,6 @@ NSString *const genresPlist = @"/Applications/iTunes.app/Contents/Resources/genr
 @interface AppDelegate ()
 
 @property (weak) IBOutlet NSWindow *window;
-@property (weak) IBOutlet NSScrollView *list;
 
 @end
 
@@ -87,6 +86,7 @@ NSString *const genresPlist = @"/Applications/iTunes.app/Contents/Resources/genr
             return;
         }
         else if (resp == 1001) {
+            [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"launched"];
             [NSApp performSelector:@selector(terminate:) withObject:nil afterDelay:0.0];
         }
     }];
