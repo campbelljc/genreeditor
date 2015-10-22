@@ -1,0 +1,6 @@
+
+*.xccheckout
+
+*.xcscheme
+
+genreeditor.xcodeproj/xcuserdata/jcampbell.xcuserdatad/xcschemes/xcschememanagement.plist
